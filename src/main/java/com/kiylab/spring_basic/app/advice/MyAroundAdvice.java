@@ -1,11 +1,11 @@
-package com.kiylab.spring_basic.app;
+package com.kiylab.spring_basic.app.advice;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.stereotype.Component;
 
 @Component
-public class LoggingAdvice implements MethodInterceptor {
+public class MyAroundAdvice implements MethodInterceptor {
   //invoke
   @Override
   public Object invoke(MethodInvocation invocation) throws Throwable {

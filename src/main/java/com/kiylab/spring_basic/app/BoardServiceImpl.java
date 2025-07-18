@@ -15,7 +15,7 @@ public class BoardServiceImpl implements BoardService{
 
   @Override
   public Object get(Long bno) {
-    System.out.println(bno + "빈 글 조회 완료");
+    System.out.println(bno + "번 글 조회 완료");
     return null;
   }
 
@@ -28,7 +28,7 @@ public class BoardServiceImpl implements BoardService{
   @Override
   public void remove(Long bno) {
     if(bno == 1L) throw new RuntimeException( "1번글 안받음");
-    System.out.println(bno + "빈 글 삭제 완료");
+    System.out.println(bno + "번 글 삭제 완료");
 //    System.out.println();
   }
 }

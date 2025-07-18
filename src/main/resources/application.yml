@@ -1,0 +1,7 @@
+spring:
+  config:
+    import:
+      - optional:classpath:./secret/db.yml
+  application:
+    name: spring_basic
+
