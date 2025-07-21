@@ -1,27 +1,30 @@
 package com.kiylab.spring_basic.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Data
-//@Component
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Entity
+@Table(name = "tbl_member")
+@Setter
+@Getter
+@ToString(exclude = "boards")
 public class Member {
-//  @Value("gae-ddong")
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long no;
   private String name;
-//  @Value("32")
+  private String id;
+  private String pw;
   private int age;
 
-  private String id;
+  @OneToMany(mappedBy = "member")  //board쪽에서 이름 정해놨던걸로 넣어줘야함.
+  private List<Board> boards;
 
-  public Member(String s, int i) {
-    this.name = s;
-    this.age = i;
-  }
 }

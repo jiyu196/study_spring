@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class MemberServiceImpl implements MemberService{
 //  @Autowired
-  @NonNull
-  private final Member member;  // 이것만 있으면 null
+//  @NonNull
+//  private final Member member;  // 이것만 있으면 null
 
 //  @Autowired  // 이게 생성자 주입
 //  public MemberServiceImpl(Member member) { //생성자 정의
