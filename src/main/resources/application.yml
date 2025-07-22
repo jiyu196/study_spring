@@ -8,7 +8,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-server:
-  port: 80
+    properties:
+      hibernate:
+        format_sql: true
+  thymeleaf:
+    cache: false
 
