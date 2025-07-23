@@ -8,6 +8,7 @@ Java 기반의 Bean 설정, AOP, JDBC, JPA, Thymeleaf 등을 차례로 학습하
 ## 공통 🌱 spring_basic 파일 생성 
 
 ## 📁 프로젝트 구조
+```
 spring_basic/
 ├── src/
 │ ├── main/
@@ -41,6 +42,7 @@ spring_basic/
 │ ├── domain/
 │ ├── repository/
 │ └── service/
+```
 ---
 ## 📅 학습 기록
 
