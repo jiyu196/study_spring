@@ -6,7 +6,7 @@ Java 기반의 Bean 설정, AOP, JDBC, JPA, Thymeleaf 등을 차례로 학습하
 ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 
 ## 공통 🌱 spring_basic 파일 생성 
----
+
 ## 📁 프로젝트 구조
 ---
 ## 📅 학습 기록
